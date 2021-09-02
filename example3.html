@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ExoForm example 3</title>
+    <meta name="color-scheme" content="dark">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <h1>ExoForm example 3 - Fields</h1>
+    <section id="form"></section>
+    <script type="module" src="https://xo-js.dev/v1.4/xo.js"></script>
+    <script type="module">
+        const schema = {
+            pages: [{
+                fields: [
+                    {
+                        type: "name",
+                        name: "name",
+                        caption: "Enter your name"
+                    },
+                    { // adding extra field
+                        type: "multiline",
+                        caption: "Your comments",
+                        autogrow: true
+                    }
+                ]
+            }]
+        }
+
+        // adding options
+        document.getElementById("form").appendChild(await xo.form.run(schema, {
+            on: {
+                post: e => {
+                    alert(JSON.stringify(e.detail.postData, null, 2))
+                }
+            }
+        }));
+    </script>
+</body>
+
+</html>

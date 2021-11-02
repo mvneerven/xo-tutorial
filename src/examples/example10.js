@@ -20,13 +20,13 @@ async function example10() {
                         name: "name",
                         type: "name",
                         caption: "Name",
-                        bind: "instance.person.name"
+                        bind: "#/person/name"
                     },
                     {
                         name: "birthdate",
                         type: "date",
-                        caption: "Your birthdate please, @instance.person.name.first",
-                        bind: "instance.person.birthdate",
+                        caption: "Your birthdate please, #/person/name/first",
+                        bind: "#/person/birthdate",
                         min: "1910-01-01",
                         max: "2005-01-01"
                     }

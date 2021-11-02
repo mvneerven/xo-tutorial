@@ -9,6 +9,8 @@ import example8 from './example8';
 import example9 from './example9';
 import example10 from './example10';
 import example11 from './example11';
+import example12 from './example12';
+import example13 from './example13';
 
 export default [
     example1,
@@ -21,5 +23,7 @@ export default [
     example8,
     example9,
     example10,
-    example11
+    example11,
+    example12,
+    example13
 ]

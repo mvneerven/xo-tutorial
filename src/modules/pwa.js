@@ -33,8 +33,7 @@ class PWA extends xo.pwa {
         return dd
     }
 
-    selectExample(e){
-        
+    selectExample(e){        
         e = e || {target: document.querySelector("[data-pwa-area='nav'] select")}
         const i = e.target.selectedIndex;
         document.location.hash = "#//" + i;

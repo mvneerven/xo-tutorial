@@ -1,5 +1,5 @@
 {
-  "name": "ttc-website",
+  "name": "xo-tutorial",
   "version": "2.0.0",
   "description": "ES6 Website powered by XO-JS",
   "main": "js/index.js",
@@ -14,14 +14,14 @@
     "url": "https://github.com/mvneerven/ttc-lemmer"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Marc van Neerven",
+  "license": "MIT",
   "devDependencies": {
     "cross-env": "^7.0.3",
     "esbuild": "^0.11.23",
     "esbuild-plugin-markdown": "^0.0.3"
   },
   "dependencies": {
-    "@mvneerven/xo-js": "^1.4.108"
+    "@mvneerven/xo-js": "^1.5.4"
   }
 }
